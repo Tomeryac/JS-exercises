@@ -1,0 +1,8 @@
+const num = 123;
+let sum = 0;
+let count = num;
+while(count > 0) {
+    sum += count % 10;
+    count = Math.floor(count / 10);
+}
+console.log(sum);
