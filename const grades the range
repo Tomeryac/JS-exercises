@@ -1,0 +1,60 @@
+let grades = [73, 91, 88, 56, 62, 84, 95, 96, 88, 92];
+function range (grades){
+    let max_grade = 0;
+    let min_grade = 100;
+    for(let i =0;i<grades.length;i++){
+        if(max_grade<grades[i]){
+            max_grade = grades[i];
+        }
+        if(min_grade>grades[i]){
+            min_grade = grades[i];
+        }
+    }
+    return(max_grade-min_grade);
+}
+console.log(range(grades));
+
+
+
+ grades = [73, 91, 88, 56, 62, 84, 95, 96, 88, 92];
+let middle;
+if(grades.length % 2 == 0){
+    middle =(grades.length /2);
+}
+    else {
+        middle = [(grades.length-1)/2];   
+    }
+    console.log(middle)
+   let half = grades.slice(middle);
+   function range (half){
+    let max_grade = 0;
+    let min_grade = 100;
+    for(let i =0;i<half.length;i++){
+        if(max_grade<half[i]){
+            max_grade = half[i];
+        }
+        if(min_grade>half[i]){
+            min_grade = half[i];
+        }
+    }
+    return(max_grade-min_grade);
+}
+console.log(range(half));
+  
+
+let grades = [73, 91, 88, 56, 62, 84, 95, 96, 88, 92];
+function middle (grades)
+let median=0;
+if(grades.length%2===1)
+{
+    median=grades[(grades.length-1)/2];
+}
+else
+{
+    median=(grades[Math.floor((grades.length-1)/2)]+grades[Math.ceil((grades.length-1)/2)])/2;
+}
+console.log(median);
+
+
+
+
